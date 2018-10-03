@@ -24,7 +24,7 @@
 
 - (void)setWordCount:(int)wordCount
 {
-    self.wordCount = [[self text] wordCount];
+    [self setWordCount:[[self text] wordCount]];
 }
 
 @end
