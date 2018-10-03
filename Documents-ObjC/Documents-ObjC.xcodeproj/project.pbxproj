@@ -14,6 +14,7 @@
 		F83E13FA2165503C00286CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E13F92165503C00286CEA /* main.m */; };
 		F83E1403216553C600286CEA /* JTMDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */; };
 		F83E1406216553F100286CEA /* JTMDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */; };
+		F83E140921655AED00286CEA /* NSString+JTMWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E140821655AED00286CEA /* NSString+JTMWordCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTMDocumentTableViewController.m; sourceTree = "<group>"; };
 		F83E1404216553F100286CEA /* JTMDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTMDocumentDetailViewController.h; sourceTree = "<group>"; };
 		F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTMDocumentDetailViewController.m; sourceTree = "<group>"; };
+		F83E140721655AED00286CEA /* NSString+JTMWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+JTMWordCount.h"; path = "Documents-ObjC/NSString+JTMWordCount.h"; sourceTree = SOURCE_ROOT; };
+		F83E140821655AED00286CEA /* NSString+JTMWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+JTMWordCount.m"; path = "Documents-ObjC/NSString+JTMWordCount.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */,
 				F83E1404216553F100286CEA /* JTMDocumentDetailViewController.h */,
 				F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */,
+				F83E140721655AED00286CEA /* NSString+JTMWordCount.h */,
+				F83E140821655AED00286CEA /* NSString+JTMWordCount.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83E1406216553F100286CEA /* JTMDocumentDetailViewController.m in Sources */,
+				F83E140921655AED00286CEA /* NSString+JTMWordCount.m in Sources */,
 				F83E13FA2165503C00286CEA /* main.m in Sources */,
 				F83E1403216553C600286CEA /* JTMDocumentTableViewController.m in Sources */,
 				F83E13EC2165503C00286CEA /* AppDelegate.m in Sources */,

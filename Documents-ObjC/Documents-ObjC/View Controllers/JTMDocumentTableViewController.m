@@ -7,6 +7,7 @@
 //
 
 #import "JTMDocumentTableViewController.h"
+#import "NSString+JTMWordCount.h"
 
 @interface JTMDocumentTableViewController ()
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *string = @"Sample message for word count Category method";
+    NSLog(@"%i", [string wordCount]);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
