@@ -15,6 +15,23 @@
 
 @implementation JTMDocumentTableViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _documentController = [[JTMDocumentController alloc] init];
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        _documentController = [[JTMDocumentController alloc] init];
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -30,25 +47,22 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return [[[self documentController] documents] count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DocumentCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    JTMDocument *document = [[[self documentController] documents] objectAtIndex:[indexPath row]];
+    
+    [[cell textLabel] setText:[document title]];
+    NSString *wordsString = (NSString *)[document wordCount];
+    [[cell detailTextLabel] setText: (@"%i words", [document wordCount])];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

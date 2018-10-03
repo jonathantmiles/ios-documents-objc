@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTMDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JTMDocumentTableViewController : UITableViewController
 
-
+@property JTMDocumentController *documentController;
 
 @end
 
