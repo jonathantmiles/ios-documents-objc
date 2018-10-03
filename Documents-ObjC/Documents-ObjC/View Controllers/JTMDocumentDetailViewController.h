@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTMDocument.h"
+#import "JTMDocumentController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,10 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (IBAction)saveDocument:(id)sender;
 
+@property JTMDocument *document;
+@property JTMDocumentController *documentController;
+
 @property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
-
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
-
 @property (weak, nonatomic) IBOutlet UITextView *documentBody;
 
 @end
