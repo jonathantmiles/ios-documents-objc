@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F83E13EC2165503C00286CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E13EB2165503C00286CEA /* AppDelegate.m */; };
-		F83E13EF2165503C00286CEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E13EE2165503C00286CEA /* ViewController.m */; };
 		F83E13F22165503C00286CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F83E13F02165503C00286CEA /* Main.storyboard */; };
 		F83E13F42165503C00286CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83E13F32165503C00286CEA /* Assets.xcassets */; };
 		F83E13F72165503C00286CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F83E13F52165503C00286CEA /* LaunchScreen.storyboard */; };
 		F83E13FA2165503C00286CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E13F92165503C00286CEA /* main.m */; };
+		F83E1403216553C600286CEA /* JTMDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */; };
+		F83E1406216553F100286CEA /* JTMDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F83E13E72165503C00286CEA /* Documents-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Documents-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83E13EA2165503C00286CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F83E13EB2165503C00286CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F83E13ED2165503C00286CEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F83E13EE2165503C00286CEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F83E13F12165503C00286CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F83E13F32165503C00286CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F83E13F62165503C00286CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F83E13F82165503C00286CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F83E13F92165503C00286CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F83E1401216553C600286CEA /* JTMDocumentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTMDocumentTableViewController.h; sourceTree = "<group>"; };
+		F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTMDocumentTableViewController.m; sourceTree = "<group>"; };
+		F83E1404216553F100286CEA /* JTMDocumentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTMDocumentDetailViewController.h; sourceTree = "<group>"; };
+		F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTMDocumentDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,7 @@
 			children = (
 				F83E13EA2165503C00286CEA /* AppDelegate.h */,
 				F83E13EB2165503C00286CEA /* AppDelegate.m */,
-				F83E13ED2165503C00286CEA /* ViewController.h */,
-				F83E13EE2165503C00286CEA /* ViewController.m */,
+				F83E14002165537E00286CEA /* View Controllers */,
 				F83E13F02165503C00286CEA /* Main.storyboard */,
 				F83E13F32165503C00286CEA /* Assets.xcassets */,
 				F83E13F52165503C00286CEA /* LaunchScreen.storyboard */,
@@ -69,6 +71,17 @@
 				F83E13F92165503C00286CEA /* main.m */,
 			);
 			path = "Documents-ObjC";
+			sourceTree = "<group>";
+		};
+		F83E14002165537E00286CEA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F83E1401216553C600286CEA /* JTMDocumentTableViewController.h */,
+				F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */,
+				F83E1404216553F100286CEA /* JTMDocumentDetailViewController.h */,
+				F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F83E13EF2165503C00286CEA /* ViewController.m in Sources */,
+				F83E1406216553F100286CEA /* JTMDocumentDetailViewController.m in Sources */,
 				F83E13FA2165503C00286CEA /* main.m in Sources */,
+				F83E1403216553C600286CEA /* JTMDocumentTableViewController.m in Sources */,
 				F83E13EC2165503C00286CEA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
