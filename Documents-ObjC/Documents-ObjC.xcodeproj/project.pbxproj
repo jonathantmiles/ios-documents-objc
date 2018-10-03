@@ -15,6 +15,7 @@
 		F83E1403216553C600286CEA /* JTMDocumentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */; };
 		F83E1406216553F100286CEA /* JTMDocumentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */; };
 		F83E140921655AED00286CEA /* NSString+JTMWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E140821655AED00286CEA /* NSString+JTMWordCount.m */; };
+		F83E140D21655ED000286CEA /* JTMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F83E140C21655ED000286CEA /* JTMDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTMDocumentDetailViewController.m; sourceTree = "<group>"; };
 		F83E140721655AED00286CEA /* NSString+JTMWordCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+JTMWordCount.h"; path = "Documents-ObjC/NSString+JTMWordCount.h"; sourceTree = SOURCE_ROOT; };
 		F83E140821655AED00286CEA /* NSString+JTMWordCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+JTMWordCount.m"; path = "Documents-ObjC/NSString+JTMWordCount.m"; sourceTree = SOURCE_ROOT; };
+		F83E140B21655ED000286CEA /* JTMDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTMDocument.h; sourceTree = "<group>"; };
+		F83E140C21655ED000286CEA /* JTMDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTMDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,9 @@
 			children = (
 				F83E13EA2165503C00286CEA /* AppDelegate.h */,
 				F83E13EB2165503C00286CEA /* AppDelegate.m */,
+				F83E140721655AED00286CEA /* NSString+JTMWordCount.h */,
+				F83E140821655AED00286CEA /* NSString+JTMWordCount.m */,
+				F83E140A21655EB700286CEA /* Model */,
 				F83E14002165537E00286CEA /* View Controllers */,
 				F83E13F02165503C00286CEA /* Main.storyboard */,
 				F83E13F32165503C00286CEA /* Assets.xcassets */,
@@ -83,10 +89,17 @@
 				F83E1402216553C600286CEA /* JTMDocumentTableViewController.m */,
 				F83E1404216553F100286CEA /* JTMDocumentDetailViewController.h */,
 				F83E1405216553F100286CEA /* JTMDocumentDetailViewController.m */,
-				F83E140721655AED00286CEA /* NSString+JTMWordCount.h */,
-				F83E140821655AED00286CEA /* NSString+JTMWordCount.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F83E140A21655EB700286CEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F83E140B21655ED000286CEA /* JTMDocument.h */,
+				F83E140C21655ED000286CEA /* JTMDocument.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +175,7 @@
 			files = (
 				F83E1406216553F100286CEA /* JTMDocumentDetailViewController.m in Sources */,
 				F83E140921655AED00286CEA /* NSString+JTMWordCount.m in Sources */,
+				F83E140D21655ED000286CEA /* JTMDocument.m in Sources */,
 				F83E13FA2165503C00286CEA /* main.m in Sources */,
 				F83E1403216553C600286CEA /* JTMDocumentTableViewController.m in Sources */,
 				F83E13EC2165503C00286CEA /* AppDelegate.m in Sources */,
