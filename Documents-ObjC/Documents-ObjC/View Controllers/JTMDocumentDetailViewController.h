@@ -12,7 +12,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JTMDocumentDetailViewController : UIViewController
+@interface JTMDocumentDetailViewController : UIViewController <UITextViewDelegate>
+
+- (void)updateViews;
 
 - (IBAction)saveDocument:(id)sender;
 

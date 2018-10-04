@@ -16,19 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [[[self documentBody] delegate] self];
+    [self textViewDidChange:[self documentBody]];
+    [self updateViews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)updateViews
+{
+    [[self titleTextField] setText:[[self document] title]];
+    [[self documentBody] setText:[[self document] text]];
 }
-*/
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    [[self wordCountLabel] setText: [NSString stringWithFormat:@"%i words", [[self document] wordCount]]];
+}
 
 - (IBAction)saveDocument:(id)sender {
+    if ([self document])
+    {
+        [[self documentController]updateDocument:[self document] withTitle:[[self titleTextField] text] body:[[self documentBody] text]];
+    } else {
+        [[self documentController]createDocumentWithTitle:[[self titleTextField] text] body:[[self documentBody] text]];
+    }
+    [[self navigationController] popViewControllerAnimated:YES];
 }
 @end

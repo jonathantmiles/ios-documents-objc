@@ -37,14 +37,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *string = @"Sample message for word count Category method";
-    NSLog(@"%i", [string wordCount]);
+//    NSString *string = @"Sample message for word count Category method";
+//    NSLog(@"%i", [string wordCount]);
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [[self tableView] reloadData];
+    
 }
 
 #pragma mark - Table view data source
