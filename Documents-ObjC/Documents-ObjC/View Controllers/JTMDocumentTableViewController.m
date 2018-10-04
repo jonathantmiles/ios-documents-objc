@@ -9,6 +9,7 @@
 #import "JTMDocumentTableViewController.h"
 #import "NSString+JTMWordCount.h"
 #import "JTMDocument.h"
+#import "JTMDocumentDetailViewController.h"
 
 @interface JTMDocumentTableViewController ()
 
@@ -66,10 +67,13 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    JTMDocumentDetailViewController *vc = [segue destinationViewController];
+    [vc setDocumentController:[self documentController]];
+    if ([[segue identifier]  isEqual: @"ShowDetail"]) {
+        NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        [vc setDocument:[[[self documentController] documents] objectAtIndex:[indexPath row]]];
+    }
 }
 
 @end
